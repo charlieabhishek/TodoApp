@@ -1,2 +1,4 @@
 # TodoApp
-TodoApp is iOS mobile app which is use to manage todo list and data is store in Core Data.
+- Data Persistence using Core data.
+- TableView is loaded with core data read operation.
+- Create, Read, Update and delete (CRUD)opertaion from core data.

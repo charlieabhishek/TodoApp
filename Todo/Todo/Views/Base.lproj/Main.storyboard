@@ -17,9 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="fWW-UK-pbR">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ToDoItemCell" id="whx-0m-N8z">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="whx-0m-N8z" id="Cpm-9c-iRh">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -32,14 +37,17 @@
                             <outlet property="delegate" destination="UXe-cU-bCx" id="3DD-X9-cL3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDo" id="foc-pj-Ma3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zaH-kt-K3k">
+                    <navigationItem key="navigationItem" title="ToDo" id="1Bc-T6-0Nd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="PCX-Ae-HFf">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="addButtonAction:" destination="UXe-cU-bCx" id="VBX-mc-7nj"/>
+                                <action selector="addButtonAction:" destination="UXe-cU-bCx" id="QpJ-CK-kb6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="fWW-UK-pbR" id="flL-cT-jMg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Aq-kU-zxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
